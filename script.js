@@ -1,12 +1,15 @@
 var i = 0; //starting point
-var images = ['./cat-images/cat-img1.jpeg','./cat-images/cat-img2.webp','./cat-images/cat-img3.avif','./cat-images/cat-img4.avif'];
-var time = 3000;
-var slide = document.getElementsByClassName('cat');
+var images = ['./cat-images/cat-img1.jpeg',
+'./cat-images/cat-img2.webp',
+'./cat-images/cat-img3.avif',
+'./cat-images/cat-img4.avif'];
+var time = 1300;
+var slide = document.getElementsByClassName('cat')[0];
 
 // changes images
 
 function changeImg(){
-document.slide.src = images[i];
+    slide.src =  images[i];
     if(i < images.length - 1){
         i++;
     } else {
