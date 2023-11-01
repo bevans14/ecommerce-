@@ -20,3 +20,17 @@ function changeImg(){
 }
 
 window.onload = changeImg;
+
+// 2nd page hover
+
+// const boxes = document.querySelectorAll('.box');
+
+// boxes.forEach(box => {
+//   box.addEventListener('mouseenter', () => {
+//     boxes.forEach(b => b.style.animationPlayState = 'paused');
+//   });
+
+//   box.addEventListener('mouseleave', () => {
+//     boxes.forEach(b => b.style.animationPlayState = 'running');
+//   });
+// });
