@@ -48,7 +48,7 @@ opacity: 1;
 
 .headersection{
  position: absolute;
- top: 35%;
+ top: 55%;
  left: 50%;
  transform: translate(-50%, -50%);
  text-align: center;
@@ -82,12 +82,12 @@ button:hover {
   /* PAGE 2 */
 
   .navbar{
-    background-color: gray;
+    background-color: rgb(124, 124, 155);
   }
   .navbaritems {
     list-style-type: none;
     margin: 0;
-    padding: 50px;
+    padding: 30px;
     overflow: hidden;
     display: flex;
     font-size: 1.5rem;
@@ -96,7 +96,7 @@ button:hover {
 li.navitem a {
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
@@ -108,11 +108,17 @@ li.navitem a:hover {
     float: left;
 }
 
-
+.headersbox{
+    display: flex;
+    justify-content: center;
+}
 .headers{
     text-align: center;
     margin: 1%;
     font-size: 1.5rem;
+}
+.caticon{
+    margin-top: 45px;
 }
 
   .gridcontainer{
@@ -135,7 +141,7 @@ li.navitem a:hover {
     text-align: center;
     width: 400px;
     height: 550px;
-    background-color: rgb(124, 124, 155);
+    background-color: rgb(180, 180, 252);
     margin-top: 1%;
     margin-left: 1%;
     border: 1px solid black;
@@ -175,7 +181,7 @@ p{
 /* footer */
 
 footer{
-    background-color: rgb(6, 6, 6, .5);
+    background-color: rgb(124, 124, 155);
 }
 ul{
     list-style: none;
