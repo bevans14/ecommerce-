@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
     <ul class="navbar">
-        <li class="navlogo"><img src="photos/MM-logo.png" width="200px"></li>
+        <li class="navlogo">
+            <a href="index.html">
+        <img src="photos/MM-logo.png" width="200px"></a>
+    </li>
         <section class="navbaritems">
             <li class="navitem"><a href="index.html">Home</a></li>
             <li class="navitem"><a href="products.html">Adopt</a></li>
@@ -18,11 +20,39 @@
         </ul>
 
 
+<section class="formbox">
+    <p>Ready to adopt? Fill out the form below.</p>
+    <form onsubmit="return formValidation();" action="adoptform.html">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        
+        <label for="whichcat">Which cat are you interested in adopting?</label><br>
+        <input type="text" id="whichcat" name="whichcat"><br>
+        
+        <label for="otheranimals">Do you own any other animals?</label><br>
+        <input type="radio" id="yes" name="otheranimals" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="otheranimals" value="no">
+        <label for="no">No</label><br>
+        
+        <label for="apthouse">Do you live in an apartment or house?</label><br>
+        <input type="radio" id="apt" name="apthouse" value="apt">
+        <label for="apt">Apartment</label>
+        <input type="radio" id="house" name="apthouse" value="house">
+        <label for="house">House</label><br>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+            </section>
 
-        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-            Name: <input type="text" name="fname">
-            <input type="submit" value="Submit">
-            </form>
+
 
 
         <footer>
@@ -31,10 +61,18 @@
                 <li><img class="MM" src="photos/MM-logo.png" alt="Meow Matchmaker Logo"></li>
             </section>
                 <section class="footerlogo">
+                    <a href="https://facebook.com">
                 <li><img class="logos" src="photos/facebook-logo.png" alt="facebook-logo"></li>
+                </a>
+                <a href="https://instagram.com">
                 <li><img class="logos" src="photos/insta-logo.png" alt="insta-logo"></li>
+                </a>
+                <a href="https://twitter.com">
                 <li><img class="logos" src="photos/twitter-logo.png" alt="twitter-logo"></li>
+                </a>
+                <a href="https://youtube.com">
                 <li><img class="logos" src="photos/youtube-logo.png" alt="youtube-logo"></li>
+                </a>
             </section>
             <section class="footerlinks">
                 <li class="links">Legal Stuff</li>

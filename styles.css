@@ -8,6 +8,7 @@ html{
 body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     
 }
 
@@ -61,7 +62,7 @@ opacity: 1;
  box-shadow: 10px 10px 10px black;
 }
 
-button{
+.getstarted{
     align-self: center;
     margin-bottom: 10%;
     padding: 30px;
@@ -117,7 +118,7 @@ li.navitem a:hover {
     margin: 1%;
     font-size: 1.5rem;
 }
-.caticon{
+.caticon, .cat2{
     margin-top: 45px;
 }
 
@@ -125,46 +126,44 @@ li.navitem a:hover {
    display: grid;
    grid-template-rows: repeat(4, 500px); 
    grid-template-columns: repeat(3, 400px);
-   row-gap: 5%;
-   column-gap: 1%;
+   row-gap: 4%;
    justify-content: center;
    height: 2500px;
    
  }
  
 .catrow1{
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
 }
 
 .box{
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 550px;
     background-color: rgb(180, 180, 252);
     margin-top: 1%;
     margin-left: 1%;
     border: 1px solid black;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2)
     
 }
-p{
+.catdescription{
     padding-left: 20px;
     padding-right: 20px;
     font-size: 18px;
 }
 
+.simba{
+    margin-top: 0;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
-
- /* @keyframes leftToRight {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-} */
 
 .box {
     animation: leftToRight 15s linear infinite;
@@ -177,11 +176,48 @@ p{
 }
 
 
+/* LAST PAGE */
+
+.formbox{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+input{
+    padding: 5px;
+}
+#email{
+    width: 60%;
+}
+
+.submit{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
 
 /* footer */
 
 footer{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(124, 124, 155);
+    justify-content: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+   
 }
 ul{
     list-style: none;

@@ -34,3 +34,36 @@ window.onload = changeImg;
 //     boxes.forEach(b => b.style.animationPlayState = 'running');
 //   });
 // });
+
+// form
+
+function formValidation() {
+  var fname = document.getElementById('fname');
+  var lname = document.getElementById('lname');
+  var email = document.getElementById('email');
+  var whichcat = document.getElementById('whichcat');
+  var otheranimals = document.getElementById('otheranimals');
+  var apthouse = document.getElementById('apthouse');
+  var yes = document.getElementById('yes');
+  var no = document.getElementById('no');
+  var apt = document.getElementById('apt');
+  var house = document.getElementById('house');
+
+  if (
+    fname.value === '' ||
+    lname.value === '' ||
+    email.value === '' ||
+    whichcat.value === '' ||
+    otheranimals.value === '' ||
+    apthouse.value === '' ||
+    (yes.checked === false && no.checked === false) ||
+    (yes.checked === true && apt.value === '') ||
+    (no.checked === true && house.value === '')
+  ) {
+    alert('Please fill out all required fields.');
+    return false;
+  } else {
+    return true;
+    
+  }
+}
