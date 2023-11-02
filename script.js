@@ -43,22 +43,35 @@ function formValidation() {
   var email = document.getElementById('email');
   var whichcat = document.getElementById('whichcat');
   var otheranimals = document.getElementById('otheranimals');
-  var apthouse = document.getElementById('apthouse');
-  var yes = document.getElementById('yes');
-  var no = document.getElementById('no');
-  var apt = document.getElementById('apt');
-  var house = document.getElementById('house');
+  var otherAnimalsRadios = document.getElementsByName('otheranimals');
+  var otherAnimalsChecked = false;
+  var aptHouseRadios = document.getElementsByName('apthouse');
+  var aptHouseChecked = false;
+  
+  for (var i = 0; i < otherAnimalsRadios.length; i++) {
+    if (otherAnimalsRadios[i].checked) {
+      otherAnimalsChecked = true;
+      break;
+    }
+  }
+  for (var i = 0; i < aptHouseRadios.length; i++) {
+    if (aptHouseRadios[i].checked) {
+      aptHouseChecked = true;
+      break;
+    }
+  }
+  if (!otherAnimalsChecked || !aptHouseChecked) {
+    alert('Please fill out all required fields.');
+  }
+  
 
   if (
     fname.value === '' ||
     lname.value === '' ||
     email.value === '' ||
     whichcat.value === '' ||
-    otheranimals.value === '' ||
-    apthouse.value === '' ||
-    (yes.checked === false && no.checked === false) ||
-    (yes.checked === true && apt.value === '') ||
-    (no.checked === true && house.value === '')
+    otheranimals.value === ''
+  
   ) {
     alert('Please fill out all required fields.');
     return false;
@@ -66,4 +79,10 @@ function formValidation() {
     return true;
     
   }
+  
+
+
+
+
 }
+
